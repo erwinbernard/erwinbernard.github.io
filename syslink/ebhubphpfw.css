@@ -1,0 +1,32 @@
+.ebhub {
+  color: #10375B;
+}
+
+.comment {
+  color: #32ad40;
+}
+
+.command_prompt pre {
+  color: #fff;
+  font: 12px arial, sans-serif;
+  background-color: #232937;
+  background-image: none;
+  background-repeat: repeat;
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-origin: padding-box;
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-size: auto auto;
+  margin: 10px;
+  padding: 10px;
+}
+
+code {
+  color: #ff4949;
+  background-color: #f9e6c5;
+}
+
+sup {
+  background-color: #d4f9fc;
+}

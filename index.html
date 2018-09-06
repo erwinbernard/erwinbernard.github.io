@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta http-equiv="Content-Type" content="text/html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Copyright(C) 2017 Erwin Bernard Talento. All Rights Reserved. -->
+    <meta name="author" content="Erwin Bernard Talento">
+    <meta name="web_author" content="Erwin Bernard Talento">
+    <meta name="copyright" content="Erwin Bernard Talento">
+    <meta name="description" content="EBHub SPA Framework enables developers to efficiently develop API and Single-Page Applications combining Back-End and Front-End Routing through a single Route Map.">
+    <meta name="generator" content="EBHub SPA Framework">
+    <meta name="google" content="notranslate">
+    <meta name="googlebot" content="index, follow, noodp, noarchive, nosnippet">
+    <meta name="robots" content="index, follow, noodp, noarchive, nosnippet">
+    <meta name="language" content="English">
+    <meta name="rating" content="general">
+    <meta name="keywords" content="ebhub spa framework, spa framework, php framework"/>
+    <title>EBHub SPA Framework :: Home</title>
+    <link rel="index" href="index.html">
+    <link rel="icon" type="image/ico" href="favicon.ico">
+    <!-- / NON-EBHUB STYLESHEETS STARTS HERE \ -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Droid+Sans:300,400,500,600,700,800" type="text/css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,700,800,900" type="text/css">
+    <link rel="stylesheet" href="syslink/theme1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="syslink/theme1/css/style.css">
+    <link rel="stylesheet" href="syslink/theme1/css/font-awesome.min.css">
+    <link rel="stylesheet" href="syslink/theme1/css/streamline-icon.css">
+    <link rel="stylesheet" href="syslink/theme1/css/v-nav-menu.css">
+    <link rel="stylesheet" href="syslink/theme1/css/v-portfolio.css">
+    <link rel="stylesheet" href="syslink/theme1/css/v-blog.css">
+    <link rel="stylesheet" href="syslink/theme1/css/v-animation.css">
+    <link rel="stylesheet" href="syslink/theme1/css/v-bg-stylish.css">
+    <link rel="stylesheet" href="syslink/theme1/css/v-shortcodes.css">
+    <link rel="stylesheet" href="syslink/theme1/css/theme-responsive.css">
+    <link rel="stylesheet" href="syslink/theme1/plugins/owl-carousel/owl.theme.css">
+    <link rel="stylesheet" href="syslink/theme1/plugins/owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="syslink/theme1/plugins/rs-plugin/css/settings.css">
+    <link rel="stylesheet" href="syslink/theme1/plugins/rs-plugin/css/custom-captions.css">
+    <link rel="stylesheet" href="syslink/theme1/css/custom.css">
+    <!-- \ NON-EBHUB STYLESHEETS ENDS HERE / -->
+    <link rel="stylesheet" href="syslink/ebhubphpfw.css">
+    <style type="text/css">
+      * {
+        font-family: Arial, Helvetica, "Helvetica Neue", 'Century Gothic', sans-serif;
+      }
+      
+      .ebhubfw_alert {
+        color: black;
+        font-size: 16px;
+        font-weight: 700;
+        margin: 10px;
+        padding: 2px 25px;
+        text-align: justify;
+        width: auto;        
+      }
+      
+      .ebhubfw_error {
+        background-color: #FFDDDD;
+        border: 1px solid red;
+      }
+      
+      .ebhubfw_info {
+        background-color: #a8e5f4;
+        border: 1px solid blue;
+      }
+      
+      .ebhubfw_succ {
+        background-color: #9df2ce;
+        border: 1px solid green;
+      }
+      
+      .ebhubfw_warn {
+        background-color: #f9de9f;
+        border: 1px solid yellow;
+      }
+      
+      #loadwait img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 200px;
+        height: 100px;
+        margin-top: -50px;
+        margin-left: -100px;
+      }
+      
+      #loadwait td {
+        vertical-align: middle;
+        text-align: center;
+      }
+      
+      .ebhubfw a {
+          color: #4485f4;
+      }
+    </style>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107200543-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments)};
+      gtag('js', new Date());
+      gtag('config', 'UA-107200543-1');
+    </script>
+  </head>
+  <body>
+    <div id="js-absent" class="ebhubfw_alert ebhubfw_error">
+      <h3>&nbsp;&nbsp;Your browser's JavaScript is currently disabled!</h3>
+      <p>&nbsp;&nbsp;Please enable JavaScript on your browser to use all features of this site or upgrade to a Javascript-capable browser.</p>
+    </div>
+    <div id="js-load" class="ebhubfw_alert ebhubfw_error" style="display: none;" aria-hidden="true">
+      <h3>&nbsp;&nbsp;Server Access Error!</h3>
+      <p>&nbsp;&nbsp;We encountered error accessing our files, which require our site to function properly. Please reload this page. If you still continue receiving this message, please try again later.</p>
+      <input type="text" name="email" id="email" style="display: none; background-color: #E0EBF5; color: #E0EBF5; border-style: none; font-size: 1px; height: 1px; left: -888px; position: fixed; top: -888px; width: 1px;"/>
+      <a href="erwinbernard.asp" style="display: none;"></a>
+    </div>
+    <table id="loadwait" style="display: none; background: center center no-repeat; max-width: 100%; height: auto;">
+      <tr>
+        <td>
+          <img class="img-fluid" src="syslink/pleasewait.gif" alt="Please Wait..."/>
+        </td>
+      </tr>
+    </table>
+    <script type='text/javascript'>
+      document.getElementById("js-absent").style.display = "none";
+      document.getElementById("loadwait").style.display = "block";
+    </script>
+    <div id="htmljs">
+      <div class="header-container">
+        <header class="header fixed">
+          <div class="container">
+            <div class="logo">
+              <a href="">
+                <img alt="EBHub" width=120 src="syslink/ebhub-logo.png" data-logo-height="120">SPA Framework
+              </a>
+            </div>
+            <div class="navbar-collapse nav-main-collapse collapse">
+              <nav class="nav-main mega-menu">
+                <ul class="nav nav-pills nav-main" id="mainMenu">
+                  <li>
+                    <a href="">Home</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/erwinbernard/EBHub-SPA-Framework/tree/master/download" target="_blank">Download</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/erwinbernard/EBHub-SPA-Framework/issues" target="_blank">Submit Issues</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <button class="btn btn-responsive-nav btn-inverse" data-toggle="collapse" data-target=".nav-main-collapse">
+              <i class="fa fa-bars"></i>
+            </button>
+          </div>
+          <div id="alert_error" class="ebhubfw_alert ebhubfw_error" style="display: none;">
+            <button type="button" onclick="document.getElementById('alert_error').style.display = 'none'" class="close" aria-hidden="true"><i class="fa fa-times"></i></button>
+            <h3 id="alert_errorhead"></h3>
+            <p id="alert_errormsg"></p>
+          </div>
+          <div id="alert_info" class="ebhubfw_alert ebhubfw_info" style="display: none;">
+            <button type="button" onclick="document.getElementById('alert_info').style.display = 'none'" class="close" aria-hidden="true"><i class="fa fa-times"></i></button>
+            <h3 id="alert_infohead"></h3>
+            <p id="alert_infomsg"></p>
+          </div>
+          <div id="alert_succ" class="ebhubfw_alert ebhubfw_succ" style="display: none;">
+            <button type="button" onclick="document.getElementById('alert_succ').style.display = 'none'" class="close" aria-hidden="true"><i class="fa fa-times"></i></button>
+            <h3 id="alert_succhead"></h3>
+            <p id="alert_succmsg"></p>
+          </div>
+          <div id="alert_warn" class="ebhubfw_alert ebhubfw_warn" style="display: none;">
+            <button type="button" onclick="document.getElementById('alert_warn').style.display = 'none'" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
+            <h3 id="alert_warnhead"></h3>
+            <p id="alert_warnmsg"></p>
+          </div>
+        </header>
+      </div>
+      <div id="ebhub_ajax" style="min-height: 600px;">
+        <div id="container">
+          <div class="home-slider-wrap fullwidthbanner-container">
+            <div class="v-rev-slider" data-slider-options='{ }'>
+              <ul>
+                <li data-transition="fade" data-slotamount="7" data-masterspeed="600">
+                  <link rel="prefetch" href="syslink/home/slider1.jpg">
+                  <img src="syslink/home/slider1.jpg" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat">
+                  <div class="tp-caption light_heavy_60_shadowed sfl stl" style="letter-spacing:1px"
+                    data-x="60"
+                    data-y="130"
+                    data-speed="600"
+                    data-start="600"
+                    data-easing="Power1.easeInOut"
+                    data-splitin="none"
+                    data-splitout="none"
+                    data-elementdelay="0"
+                    data-endelementdelay="0"
+                    data-endspeed="300">
+                    SCALABLE RESPONSE
+                  </div>
+                  <div class="tp-caption v-caption-h1 sfl stl"
+                    data-x="60"
+                    data-y="210"
+                    data-speed="700"
+                    data-start="1200"
+                    data-easing="Power1.easeInOut"
+                    data-splitin="none"
+                    data-splitout="none"
+                    data-elementdelay="0"
+                    data-endelementdelay="0"
+                    data-endspeed="300">
+                    Established on a Robust Framework<br/>
+                  </div>
+                  <div class="tp-caption sfl stl"
+                    data-x="60"
+                    data-y="300"
+                    data-speed="600"
+                    data-start="1800"
+                    data-easing="Power1.easeInOut"
+                    data-splitin="none"
+                    data-splitout="none"
+                    data-elementdelay="0"
+                    data-endelementdelay="0"
+                    data-endspeed="300">
+                    <a href="https://github.com/erwinbernard/EBHub-SPA-Framework/tree/master/download" target="_blank" class="btn v-btn v-third-light">DOWNLOAD NOW!</a>
+                  </div>
+                </li>
+                <li data-transition="fade" data-slotamount="7" data-masterspeed="600">
+                  <link rel="prefetch" href="syslink/home/slider2.jpg">
+                  <img src="syslink/home/slider2.jpg" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat">
+                  <div class="tp-caption v-caption-big-white lfb stb"
+                    data-x="center" data-hoffset="0"
+                    data-y="center" data-voffset="-60"
+                    data-speed="800"
+                    data-start="600"
+                    data-easing="Circ.easeInOut"
+                    data-splitin="none"
+                    data-splitout="none"
+                    data-elementdelay="0"
+                    data-endelementdelay="0"
+                    data-endspeed="600">
+                    Perfect Endpoint for all your Dynamic needs
+                  </div>
+                  <div class="tp-caption light_thin_25 lfb st center"
+                    data-x="center" data-hoffset="0"
+                    data-y="bottom" data-voffset="-210"
+                    data-speed="700"
+                    data-start="1100"
+                    data-easing="Circ.easeInOut"
+                    data-splitin="none"
+                    data-splitout="none"
+                    data-elementdelay="0"
+                    data-endelementdelay="0"
+                    data-endspeed="600">
+                    Straight Out of the Box SPA Framework.
+                  </div>
+                  <div class="tp-caption sfl stl"
+                    data-x="center" data-hoffset="0"
+                    data-y="bottom" data-voffset="-110"
+                    data-speed="700"
+                    data-start="1700"
+                    data-easing="Circ.easeInOut"
+                    data-splitin="none"
+                    data-splitout="none"
+                    data-elementdelay="0"
+                    data-endelementdelay="0"
+                    data-endspeed="600">
+                    <a href="https://github.com/erwinbernard/EBHub-SPA-Framework/tree/master/download" target="_blank" class="btn v-btn v-third-light">SEE IT FOR YOURSELF</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="shadow-right"></div>
+          </div>
+          <div class="v-page-wrap no-bottom-spacing">
+            <div class="container">
+              <div class="row center">
+                <div class="col-sm-12">
+                  <p class="v-smash-text-large">
+                    <span>One Route Map for Both Ends!</span>
+                  </p>
+                  <blockquote><p>
+                    EBHub SPA Framework eliminates the need to separate routes for Back-End and Front-End and combines them into one Single Route Map.<br/>
+                    Yet you can still use your preferred front-end framework or library as long as you pass the client data to the framework's front-end library.
+                  </p></blockquote>
+                  <div class="nhr nhr-short">
+                    <span class="nhr-inner"><span class="nhr-inner-style-circle"></span></span>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-4">
+                  <div class="feature-box left-icon-v2" data-animation="flip-y" data-delay="200">
+                    <i class="fa fa-star-o v-icon icn-holder medium"></i>
+                    <div class="feature-box-text">
+                      <h3>Server-to-Client Encryption</h3>
+                      <div class="feature-box-text-inner">
+                        <p>Built-in Server Elliptic Curve Encryption (ECDH). Whether you are serving a single page or an AJAX, you can implement a robust encryption transmission without compromising your customer's data.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="feature-box left-icon-v2" data-animation="flip-y" data-delay="0">
+                    <i class="fa fa-support v-icon icn-holder medium"></i>
+                    <div class="feature-box-text">
+                      <h3>Highly-Scalable Route Definition</h3>
+                      <div class="feature-box-text-inner">
+                        <p>There's no need to cramped your route definition in a single file, whether it is stateless or not. You can set a single route definition in an individual file.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="feature-box left-icon-v2" data-animation="flip-y" data-delay="400">
+                    <i class="fa fa-image v-icon icn-holder medium"></i>
+                    <div class="feature-box-text">
+                      <h3>One Endpoint</h3>
+                      <div class="feature-box-text-inner">
+                        <p>In addition to your Main application and Asset Links, you can access many different tasks in one single entrance for your CLI, CRON, CMS, Hookup, Application Error, Server Error packed into one.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="v-spacer col-sm-12 v-height-small"></div>
+              <div class="row">
+                  <div class="col-sm-4">
+                    <div class="feature-box left-icon-v2" data-animation="flip-y" data-delay="600">
+                      <i class="icon-rain-lightning v-icon icn-holder medium"></i>
+                      <div class="feature-box-text">
+                        <h3>PHP 7.2 Ready</h3>
+                        <div class="feature-box-text-inner">
+                          <p>Make your application blazing fast without the need to migrate to NodeJS or Python.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="feature-box left-icon-v2" data-animation="flip-y" data-delay="800">
+                      <i class="fa fa-desktop v-icon icn-holder medium"></i>
+                      <div class="feature-box-text">
+                        <h3>Multi-Level Headers</h3>
+                        <div class="feature-box-text-inner">
+                          <p>Customized Header for your Route Entry, Route Default and Individual Header.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="feature-box left-icon-v2" data-animation="flip-y" data-delay="1000">
+                      <i class="fa fa-flask v-icon icn-holder medium"></i>
+                      <div class="feature-box-text">
+                        <h3>Extensive Error Logging</h3>
+                        <div class="feature-box-text-inner">
+                          <p>You can customize file log to your specific errors.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="v-spacer col-sm-12 v-height-small"></div>
+              <div class="row">
+                <div class="col-sm-4">
+                  <div class="feature-box left-icon-v2" data-animation="flip-y" data-delay="1200">
+                    <i class="fa fa-gear v-icon icn-holder medium"></i>
+                    <div class="feature-box-text">
+                      <h3>Easy Syntax</h3>
+                      <div class="feature-box-text-inner">
+                        <p>No more complex syntax to remember so you can focus more time on coding.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="feature-box left-icon-v2" data-animation="flip-y" data-delay="1400">
+                    <i class="fa fa-location-arrow v-icon icn-holder medium"></i>
+                    <div class="feature-box-text">
+                      <h3>Centralized Post Endpoint</h3>
+                      <div class="feature-box-text-inner">
+                        <p>Dynamic Posting makes your posts less prone to vulnerability</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="feature-box left-icon-v2" data-animation="flip-y" data-delay="1600">
+                    <i class="fa fa-cloud-download v-icon icn-holder medium"></i>
+                    <div class="feature-box-text">
+                      <h3>Centralize Route Map</h3>
+                      <div class="feature-box-text-inner">
+                        <p>EBHub combines all your AJAX & Synchonize route including specific Headers in one central Hub.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="v-spacer col-sm-12 v-height-standard"></div>
+            </div>
+            <div id="features"></div>
+            <div class="container">
+              <div class="v-spacer col-sm-12 v-height-standard"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="modalpop" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="Modal Pop-Up" aria-hidden="true">
+        <div class="modal-dialog modal-content">
+          <div class="modal-header">
+            <h3 id="modal_heading"></h3>
+          </div>
+          <div class="modal-body row">
+            <div class="col-sm-12">
+              <p id="modal_1stmsg"></p>
+              <p id="modal_2ndmsg"></p>
+            </div>
+            <div class="pull-right">
+              <button type="button" data-dismiss="modal" aria-hidden="true" class="btn v-btn v-btn-default special-icon v-small-button"><i class="fa fa-check"></i>OK</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-wrap">
+        <div class="copyright">
+          <div class="container">
+          </div>
+        </div>
+      </div>      
+      <div id="back-to-top" class="animate-top"><i class="fa fa-angle-up"></i></div>
+      <!-- / NON-EBHUB SCRIPTS STARTS HERE \ -->
+      <script src="syslink/theme1/js/jquery.min.js"></script>
+      <script src="syslink/theme1/js/bootstrap.min.js"></script>
+      <script src="syslink/theme1/js/jquery-ui-1.10.2.custom.min.js"></script>
+      <script src="syslink/theme1/js/jquery.flexslider-min.js"></script>
+      <script src="syslink/theme1/js/jquery.easing.js"></script>
+      <script src="syslink/theme1/js/jquery.fitvids.js"></script>
+      <script src="syslink/theme1/js/jquery.carouFredSel.min.js"></script>
+      <script src="syslink/theme1/js/jquery.validate.js"></script>
+      <script src="syslink/theme1/js/theme-plugins.js"></script>
+      <script src="syslink/theme1/js/jquery.isotope.min.js"></script>
+      <script src="syslink/theme1/js/imagesloaded.js"></script>
+      <script src="syslink/theme1/js/view.min.js?auto"></script>
+      <script src="syslink/theme1/plugins/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+      <script src="syslink/theme1/plugins/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+      <script src="syslink/theme1/js/theme-core.js"></script>
+      <script src="syslink/tools/emn178-sha512.min.js"></script>
+      <script src="syslink/tools/ricmoo-aes.js"></script>
+      <script src="syslink/tools/wavesplatform-curve25519.js"></script>
+      <!-- \ NON-EBHUB SCRIPTS ENDS HERE / -->
+      <script src="syslink/ebhubfw.js"></script>
+      <script>
+        var html_id = {
+          eb_rootlinkstatic: "",
+          eb_rootlinkdefault: "",
+          eb_rootlinkbase: "",
+          eb_syslinkstatic: "syslink/",
+          eb_syslinkdefault: "syslink/",
+          eb_syslinkbase: "syslink/"
+        };
+      </script>
+      <script src="syslink/eb-core.js" charset="UTF-8"></script>
+      <script>window.onload = function(){ebhubfw.onload();};</script>
+      <script type='text/javascript'>
+        document.getElementById("js-load").style.display = "block";
+        ebhub.showhide('js-load');
+      </script>
+    </div>
+  </body>
+</html>
