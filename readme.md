@@ -1,5 +1,5 @@
 ## EBHub SPA Framework
-[https://erwinbernard.github.io](https://erwinbernard.github.io)
+[https://spafw.ebhub.net/demo#api](https://spafw.ebhub.net/demo#api)
 
 EBHub SPA Framework is a Web Framework that enables developers to efficiently develop API and Single-Page Applications through a single Route Map combining Back-End and Front-End Routing. One of its many features are:
 
