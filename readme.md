@@ -1,11 +1,11 @@
 ## EBHub SPA Framework
-[https://spafw.ebhub.net/demo#api](https://spafw.ebhub.net/demo#api)
+[https://webframework.ebhub.net/demo#api](https://webframework.ebhub.net/demo#api)
 
-EBHub SPA Framework is a Web Framework that enables developers to efficiently develop API and Single-Page Applications through a single Route Map combining Back-End and Front-End Routing. One of its many features are:
+EBHub SPA/API Framework is a Web Framework that enables developers to efficiently develop API and Single-Page Applications through a single Route Map combining Back-End and Front-End Routing. Its features are:
 
 - Built-in Server Elliptic Curve Encryption (ECDH) for SPA data interchange;
 - Single Route Map for both Front-End and Back-End Routing;
-- Creation of dynamic links, shortlinks (or shortened URL) and anonymous link;
+- Creation of dynamic links, short links (or shortened URLs), and anonymous link;
 - Multiple HTTP Headers and automatic HTTP decaching with dynamic links;
 - 3-Level Language Route and Under-Maintenance routing;
 - Redirection Map with automatic entry sorting;
